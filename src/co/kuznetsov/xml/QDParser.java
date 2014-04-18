@@ -8,12 +8,11 @@ import static co.kuznetsov.util.StringBuilderUtils.*;
 
 /**
  * Based on Steven R. Brandt's (Java Tip 128: Create a quick-and-dirty XML parser)
- * <p/>
+ * <p>
  * This parser is, like the SAX parser, an event based parser, but with much less functionality.
  * We also use our own events like attributeName and attributeValue to make sure we don't accumulate anything
  * <p/>
- * It uses ByteBuffer as a data source.
- * <p/>
+ * <p>
  * The instances of QDParser are non-thread safe, because they have internal state.
  * Internal state could be avoided, but for sake of avoiding garbage we pre-create
  * StringBuilder instances.
