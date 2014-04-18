@@ -10,7 +10,7 @@ public class ByteBufferInputStream extends InputStream {
     public ByteBufferInputStream () {
     }
 
-    /** Creates an uninitialized stream that cannot be used until {@link #setByteBuffer(java.nio.ByteBuffer)} is called. */
+    /** Creates an uninitialized stream that cannot be used until {@link #setByteBuffer(ByteBuffer)} is called. */
     public ByteBufferInputStream (ByteBuffer byteBuffer) {
         this.byteBuffer = byteBuffer;
     }
